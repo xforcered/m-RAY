@@ -1,0 +1,4 @@
+paramiko
+bitstring
+colorama
+scp
