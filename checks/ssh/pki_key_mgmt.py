@@ -1,5 +1,5 @@
 # IBM z/OS, for PKI-based authentication, must use the ICSF or ESM for key management.
-# https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223811
+# https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223811
 # If keys are stored in UNIX files, the identity of users is not properly mapped to the key for 
 # forensic purposes. 
 
@@ -16,7 +16,7 @@ def pki_key_mgmt(mainframe, client):
     """
     print("Check: ICSF or ESM used for key management")
     print("       Severity if present: MEDIUM")
-    print("       Context: https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223811")
+    print("       Context: https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223811")
 
     finding = False
 

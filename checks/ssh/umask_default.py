@@ -1,5 +1,5 @@
 # IBM z/OS UNIX security parameters in /etc/profile must be properly specified
-# https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223842
+# https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223842
 # umask should be set to 077
 # LOGNAME variable should be set to readonly
 
@@ -16,7 +16,7 @@ def umask_default(mainframe, client):
     """
     print("Check: umask command set to 077")
     print("       Severity if present: MEDIUM")
-    print("       Context: https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223842")
+    print("       Context: https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223842")
     
     cmd = "cat /etc/profile | grep umask"
     result = mainframe.c_send(client, cmd)

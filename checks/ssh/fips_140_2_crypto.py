@@ -1,6 +1,6 @@
 # The IBM RACF SSH daemon must be configured to use a FIPS 140-2 compliant 
 # cryptographic algorithm to protect confidential information and remote access sessions.
-# https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223807
+# https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223807
 # Ciphers list in sshd_config should not contain any ciphers not starting with 3des or aes
 # MACs line should only use hmac-sha1 or higher
 # zos_sshd_config should contain the following lines:
@@ -21,7 +21,7 @@ def fips_140_2_crypto(mainframe, client):
     """
     print("Check: SSH daemon uses secure ciphers")
     print("       Severity if present: HIGH")
-    print("       Context: https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223807")
+    print("       Context: https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223807")
 
     # Build a list of ciphers
     cmd = "grep -v '^\s*$\|^\s*\#' /etc/ssh/sshd_config | grep Ciphers"

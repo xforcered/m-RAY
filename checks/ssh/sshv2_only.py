@@ -1,5 +1,5 @@
 # IBM z/OS SSH daemon must be configured to only use the SSHv2 protocol
-# https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223810
+# https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223810
 # If SSH daemon is not active, this is not a finding. Since this check runs via SSH,
 # this condition will never apply.
 
@@ -16,7 +16,7 @@ def sshv2_only(mainframe, client):
     """
     print("Check: SSH daemon allows SSHv1")
     print("       Severity if present: HIGH")
-    print("       Context: https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223810")
+    print("       Context: https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223810")
     
     cmd = "cat /etc/ssh/sshd_config | grep Protocol"
     result = mainframe.c_send(client, cmd)

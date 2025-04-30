@@ -1,5 +1,5 @@
 # User Catalog Information
-# https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223669
+# https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223669
 # This file will return information, link provides information about potential 
 # security implications of the results
 

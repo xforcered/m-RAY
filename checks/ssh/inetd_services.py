@@ -1,6 +1,6 @@
 # IBM z/OS UNIX security parameters for restricted network services in /etc/inetd.conf
 # must be properly specified
-# https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223855
+# https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223855
 
 from utilities import colorprint
 
@@ -15,7 +15,7 @@ def inetd_services(mainframe, client):
     """
     print("Check: Restricted network protocols in use")
     print("       Severity if present: MEDIUM")
-    print("       Context: https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223855")
+    print("       Context: https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223855")
     
     cmd = "cat /etc/inetd.conf"
     result = mainframe.c_send(client, cmd)

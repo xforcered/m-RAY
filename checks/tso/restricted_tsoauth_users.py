@@ -1,5 +1,5 @@
 # IBM Z/OS TSOAUTH resources must be restricted to authorized users.
-# https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223836
+# https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223836
 # Sev = med
 
 from utilities import colorprint
@@ -14,7 +14,7 @@ def restricted_tsoauth_users(mainframe, client):
     """
     print("Check: TSOAUTH resources are restricted to the proper users")
     print("       Severity if present: MEDIUM")
-    print("       Context: https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223836")
+    print("       Context: https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223836")
 
     cmd = "RLIST SURROGAT *"
     result = mainframe.c_send(client, cmd)

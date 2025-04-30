@@ -1,5 +1,5 @@
 # IBM z/OS UNIX SYSTEM FILE SECURITY SETTINGS must be properly protected or specified.
-# https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223848
+# https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223848
 # Not all these files will exist on every system. If they do not exist, this is not a finding.
 # These are the maximum file permissions that should be set. 
 
@@ -70,7 +70,7 @@ def unix_system_file_security(mainframe, client):
     """
     print("Check: System files with incorrect permissions")
     print("       Severity if present: MEDIUM")
-    print("       Context: https://www.stigviewer.com/stig/ibm_zos_racf/2023-12-27/finding/V-223848")
+    print("       Context: https://www.stigviewer.com/stigs/ibm_zos_racf/2023-12-27/finding/V-223848")
     
     for key in perms:
         cmd = "ls -alW " + key
